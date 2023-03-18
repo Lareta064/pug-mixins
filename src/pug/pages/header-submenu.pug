@@ -1,0 +1,27 @@
+extends ../layouts/layout.pug
+
+block content
+	header.header
+		.container
+			.header-content
+				a(href="#!") LOGO
+				+header-submenu([
+					{link: 'link1', text: 'Home', addClass: 'menu-item-active'},
+					{link: 'about', text: 'About'},
+					{link: 'services', text: 'Services', 
+						sub:
+							[
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+							]
+						}
+					,
+					{link: 'contacts', text: 'Contacts'}
+				])
+				.header-contacts
+					a(href="#!") 8(800)-000-50-50
+					a(href="#!") hello@emai.com
+block variables
+	-var title = "Header";

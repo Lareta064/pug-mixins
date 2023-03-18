@@ -19,19 +19,20 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 хлебные крошки
+				h2 Mеню 1 уровня
 
 				.container-dashboard__content
+					+header-menu([
+						{link: 'link1', text: 'Home', addClass: 'menu-item-active'},
+						{link: 'about', text: 'About'},
+						{link: 'services', text: 'Services'},
+						{link: 'contacts', text: 'Contacts'}
+					])
 					
-				.container-dashboard__content(style="background:  darkblue")
-					//- +breadcrumbs(
-					//- 	{link: "#", text: 'Профиль'},
-					//- 	{link: "#", text: 'Список заказов'},
-					//- 	{link: "#", text: 'Проверка продавца'},
-					//- 	)(class="breadcrumb-block--white")
 				pre.
-					//- +breadcrumbs(
-					//- 	{link: "#", text: 'Профиль'},
-					//- 	{link: "#", text: 'Список заказов'},
-					//- 	{link: "#", text: 'Проверка продавца'},
-					//- 	)(class="breadcrumb-block--white")
+					+header-menu([
+						{link: 'link1', text: 'Home', addClass: 'menu-item-active'},
+						{link: 'about', text: 'About'},
+						{link: 'services', text: 'Services'},
+						{link: 'contacts', text: 'Contacts'}
+					])

@@ -1,0 +1,4 @@
+mixin header-menu(arg)
+	nav.header-menu
+		each item in arg
+			a(href=""+ item.link +".html" class=(item.addClass ? ''+ item.addClass : '')) #{item.text}
