@@ -19,18 +19,33 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 Компоненты меню
+				h2 Mеню 1 уровня
 
 				.container-dashboard__content
-					ul.ui-components
-						//- li
-						//- 	a(href="#!").pay-card
-						//- 		.pay-card__img
-						//- 			img(src="../img/visa.png", width="77" alt="img")
-						//- 		.pay-card__text Оплата картой
-						//- 	pre.
-						//- 		a(href="#!").pay-card
-						//- 			.pay-card__img
-						//- 				img(src="../img/visa.png", width="77" alt="img")
-						//- 			.pay-card__text Оплата картой
+					+header-submenu([
+						{link: 'link1', text: 'Home', addClass: 'menu-item-active'},
+						{link: 'about', text: 'About'},
+						{link: 'services', text: 'Services', sub:[
+							{link:'serv1', text: 'Service name'},
+							{link:'serv1', text: 'Service name'},
+							{link:'serv1', text: 'Service name'},
+							{link:'serv1', text: 'Service name'},
+						]},
+						{link: 'contacts', text: 'Contacts'}
+					])
+					
+				pre.
+					+header-submenu([
+						{link: 'link1', text: 'Home', addClass: 'menu-item-active'},
+						{link: 'about', text: 'About'},
+						{link: 'services', text: 'Services',
+							sub:[
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+								{link:'serv1', text: 'Service name'},
+							]
+						},
+						{link: 'contacts', text: 'Contacts'}
+					])
 						
