@@ -1,0 +1,8 @@
+mixin gallery(count)
+	.lightbox-gallery
+		-var k = 1
+		-var m = 1
+		while k <= count && m <= count
+			
+			a(href="../img/gallery/"+ k++ +".webp" data-lightbox="gallery-1")
+				img(src="../img/gallery/"+ m++ +".webp", alt="img")

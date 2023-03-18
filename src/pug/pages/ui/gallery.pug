@@ -7,9 +7,12 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-
-		//====убрать синий цвет у ссылок в сафари ========
-		meta(name="format-detection" content="telephone=no")
+		//======= галерея lightbox =============
+		link(rel="stylesheet" href="../libs/lightbox/css/lightbox.css" )
+		//=============== lightbox ===================
+		
+		script(src="../libs/jquery/jquery-3.0.0.min.js")
+		script(src="../libs/lightbox/js/lightbox.min.js")
 		link(rel="stylesheet", href="../css/main.css")
 		title UI-KIT
 
@@ -19,7 +22,29 @@ html(lang="ru")
 
 		block content
 			.container-dashboard
-				h2 Форма
+				h2 Gallery
 
 				.container-dashboard__content
+					.lightbox-gallery
+					+gallery(4)
+						//- a(href="../img/gallery/1.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/1.webp", alt="img")
+						//- a(href="../img/gallery/2.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/2.webp", alt="img")
+						//- a(href="../img/gallery/3.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/3.webp", alt="img")
+						//- a(href="../img/gallery/4.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/4.webp", alt="img")
+						//- a(href="../img/gallery/5.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/5.webp", alt="img")
+						//- a(href="../img/gallery/6.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/6.webp", alt="img")
+						//- a(href="../img/gallery/7.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/7.webp", alt="img")
+						//- a(href="../img/gallery/8.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/8.webp", alt="img")
+						//- a(href="../img/gallery/9.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/9.webp", alt="img")
+						//- a(href="../img/gallery/10.webp" data-lightbox="gallery-1")
+						//- 	img(src="../img/gallery/10.webp", alt="img")
 					
