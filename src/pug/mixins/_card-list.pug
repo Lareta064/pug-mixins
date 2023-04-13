@@ -1,0 +1,8 @@
+mixin cardList(title, ...items)
+	//===== single card ======
+	.card-list&attributes(attributes)
+		.card-list__title #{title}
+		.card-list__content
+			ul
+				each item of items
+					li !{item}

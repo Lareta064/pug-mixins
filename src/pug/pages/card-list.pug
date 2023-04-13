@@ -1,0 +1,43 @@
+extends ../layouts/layout.pug
+
+block content
+	section
+		.container
+			//====== cards wrapper ======
+			.card-list-wrapper
+				
+				.card-list-wrapper__col
+					+cardList(
+						'',
+						'line-1 &#9875;',
+						'line-1',
+						'line-1',
+						'line-1',
+						'line-1'
+					)(data-role="card"  class="card-red crd-new")
+					
+					//===== single card ======
+					.card-list
+						.card-list__title Заголовок-11
+						.card-list__content
+							ul
+								li Текст первой строки
+								li Текст второй строки
+								li Текст третьей строки
+
+				.card-list-wrapper__col
+					//===== single card ======
+					.card-list
+						.card-list__title Заголовок-22
+						.card-list__content
+							ul
+								li Текст первой строки
+								li Текст второй строки
+								li Текст третьей строки
+								li Текст третьей строки
+								li Текст третьей строки
+								li Текст третьей строки
+							
+
+block variables
+	-var title = "Card whis list";

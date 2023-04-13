@@ -122,15 +122,16 @@
 	}
 
 	&__cards {
-		display: flex;
-		flex-wrap: wrap;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap:30px;
 
 	}
 
 	a {
-		width: 30%;
-		margin-left: 20px;
-		margin-right: 20px;
+		// width: 30%;
+		// margin-left: 20px;
+		// margin-right: 20px;
 		height: 150px;
 		display: flex;
 		flex-direction: column;
